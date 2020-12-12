@@ -1,0 +1,65 @@
+{
+  "LoohHome": [
+    {
+      "id": 1,
+      "ProdName": "Naos cloak",
+      "category_id": "1",
+      "Image": "./assets/data/naos.PNG",
+      "Description": "Made with Walnut and Wenge wood, NAOS clock will add a wow factor to your home or office by bringing a natural spirit to the decor.",
+      "Price": "25.00 DT",
+      "Available": "Yes",
+      "ratings": "4",
+      "reviews": "20",
+      "Theme": "Winter"
+    },
+    {
+      "id": 2,
+      "ProdName": "Venus lamp",
+      "category_id": "2",
+      "Image": "./assets/data/venus.PNG",
+      "Description": "Our holea ‘VENUS’ lamp will fill your space with a warm and welcoming light, made from exotic Walnut wood, it provides a different and an elegant look to your home",
+      "Price": "30.00 DT",
+      "Available": "Yes",
+      "ratings": "5",
+      "reviews": "10",
+      "Theme": "Summer"
+    },
+    {
+      "id": 4,
+      "ProdName": "Saturn lamp",
+      "category_id": "2",
+      "Image": "./assets/data/saturn.PNG",
+      "Description": "Our ‘SATURN’ lamp will bring a unique character to the style of your home, made from a tropical Wenge wood with a dark colour, distinctive figure and a strong pattern!Our ‘SATURN’ will bring an outstanding decor to your home",
+      "Price": "30.00 DT",
+      "Available": "Yes",
+      "ratings": "5",
+      "reviews": "10",
+      "Theme": "Summer"
+    },
+    {
+      "id": 30,
+      "ProdName": "Product 4",
+      "category_id": "1",
+      "Image": "./assets/data/.png",
+      "Description": "PRODUCT DESCIRPTION",
+      "Price": "20",
+      "Available": "yes",
+      "ratings": "4",
+      "reviews": "aze",
+      "Theme": "Spring"
+    }
+  ],
+  "Categories": [
+    {
+      "catid": 1,
+      "CatName": "Lamps"
+    },
+    {
+      "catid": 2,
+      "CatName": "Cloaks"
+    }
+  ],
+  "profile": {
+    "yuiui": "typicode"
+  }
+}

@@ -1,0 +1,129 @@
+<div class="wrapper">
+    <div class="page-header page-header-xs" data-parallax="true" style="background-color: #242322;">
+        <h2 class="text-uppercase text-center" style="color: white; font-size: 70px;">Update Product</h2>
+    </div>
+    
+    
+    
+<!--Formulaire-->
+<div class="section " >
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 mr-auto ml-auto">
+                
+                <form class="contact-form" (submit)="upProd(updateproduct)"  #updateproduct="ngForm">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label>Product Name</label>
+                            <div class="input-group" >
+                                <div class="input-group-prepend">
+                                  
+                                </div>
+                                <input type="text" class="form-control" placeholder="Product Name" name="ProdName"  [(ngModel)]="prodet.ProdName" ngModel #ProdName="ngModel" required >
+                                
+                            </div>
+                            <div *ngIf="ProdName.touched && ProdName.invalid" class="alert alert-danger">Product Name required</div>
+                        </div>
+                        <div class="col-md-6">
+                            <label>Cathegory ID</label>
+                            <div class="input-group-prepend" >
+                                
+                                <select class="custom-select" required name="category_id" [(ngModel)]="prodet.category_id" ngModel #category_id="ngModel">
+                                    <option selected value="">Choose...</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                </select>
+
+                            </div>
+
+                            <div *ngIf="category_id.touched && category_id.invalid" class="alert alert-danger">Category Number is Required</div>
+
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label>Theme</label>
+                            <div class="input-group-prepend" >
+                                
+                                <select class="custom-select" required name="Theme" [(ngModel)]="prodet.Theme" ngModel #Theme="ngModel">
+                                    <option selected value="">Choose Theme</option>
+                                    <option value="Winter">Winter</option>
+                                    <option value="Spring">Spring</option>
+                                    <option value="Summer">Summer</option>
+                                    <option value="Fall">Fall</option>
+                                </select>
+                                 
+                            </div>
+                            <div *ngIf="Theme.invalid && Theme.touched" class="alert alert-danger">Theme is Required</div>
+
+                            <label>Ratings</label>
+                            <div class="input-group-prepend" >
+                                
+                                <select class="custom-select" required name="ratings" [(ngModel)]="prodet.ratings" ngModel #ratings="ngModel">
+                                    <option selected value="">Choose...</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                </select>
+                                 
+                            </div>
+                            <div *ngIf="ratings.invalid && ratings.touched" class="alert alert-danger">Rating is Required</div>
+
+                        </div>
+
+                        
+
+                        <div class="col-md-6">
+                            <label>Price</label>
+                            <div class="input-group" >
+                                <div class="input-group-prepend">
+                                  
+                                </div>
+                                <input type="text" class="form-control" placeholder="Price" name="Price" [(ngModel)]="prodet.Price" ngModel #Price="ngModel" required >
+                            </div>
+                            <div *ngIf="Price.touched && Price.invalid" class="alert alert-danger">Price required</div>
+
+                            <label>Image</label>
+                            <div class="input-group" >
+                                <div class="input-group-prepend">
+                                  
+                                </div>
+                                <input type="text" class="form-control" placeholder="Img" name="Image" [(ngModel)]="prodet.Image" ngModel #Image="ngModel"  >
+                            </div>
+                            <div *ngIf="Image.touched && Image.invalid" class="alert alert-danger">Image required</div>
+
+                        </div>
+                        
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <label>Description</label>
+                            <div class="input-group-prepend" >
+                                <textarea type="text" class="form-control" placeholder="Enter Product Description" required name="Description" [(ngModel)]="prodet.Description" ngModel #Description="ngModel" ></textarea>
+                                                                
+                            </div>
+                            <div *ngIf="Description.touched && Description.invalid" class="alert alert-danger">Fill the description area</div>
+
+                            
+
+                        </div>
+
+                        
+
+                        
+                        
+                    </div>
+                    
+                        <div class="col-md-4 mr-auto ml-auto">
+                            <button type="submit" class="btn btn-danger btn-lg btn-fill" [disabled]="updateproduct.invalid">Update Product</button>
+                        </div>
+                    
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</div>

@@ -1,0 +1,133 @@
+<div class="wrapper">
+    <div class="page-header page-header-xs" data-parallax="true" style="background-color: #242322;">
+        <h2 class="text-uppercase text-center" style="color: white; font-size: 70px;">Add New Product</h2>
+    </div>
+    
+    
+    
+<!--Formulaire-->
+<div class="section ">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 mr-auto ml-auto">
+                
+                <form class="contact-form" (submit)="newprod(addproduct)" #addproduct="ngForm">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label>Product Name</label>
+                            <div class="input-group" >
+                                <div class="input-group-prepend">
+                                  
+                                </div>
+                                <input type="text" class="form-control" placeholder="Product Name" name="name" ngModel #name="ngModel" required >
+                                
+                            </div>
+                            <div *ngIf="name.touched && name.invalid" class="alert alert-danger">Product Name required</div>
+                        </div>
+                        <div class="col-md-6">
+                            <label>Cathegory ID</label>
+                            <div class="input-group-prepend" >
+                                
+                                <select class="custom-select" required name="categ" ngModel #categ="ngModel">
+                                    <option selected value="">Choose...</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                </select>
+
+                            </div>
+
+                            <div *ngIf="categ.touched && categ.invalid" class="alert alert-danger">Category Number is Required</div>
+
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label>Theme</label>
+                            <div class="input-group-prepend" >
+                                
+                                <select class="custom-select" required name="theme" ngModel #theme="ngModel">
+                                    <option selected value="">Choose Theme</option>
+                                    <option value="Winter">Winter</option>
+                                    <option value="Spring">Spring</option>
+                                    <option value="Summer">Summer</option>
+                                    <option value="Fall">Fall</option>
+                                </select>
+                                 
+                            </div>
+                            <div *ngIf="theme.invalid && theme.touched" class="alert alert-danger">Theme is Required</div>
+
+                            <label>Ratings</label>
+                            <div class="input-group-prepend" >
+                                
+                                <select class="custom-select" required name="rating" ngModel #rating="ngModel">
+                                    <option selected value="">Choose...</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                </select>
+                                 
+                            </div>
+                            <div *ngIf="rating.invalid && rating.touched" class="alert alert-danger">Rating is Required</div>
+
+                        </div>
+
+                        
+
+                        <div class="col-md-6">
+                            <label>Price</label>
+                            <div class="input-group" >
+                                <div class="input-group-prepend">
+                                  
+                                </div>
+                                <input type="text" class="form-control" placeholder="Price" name="price" ngModel #price="ngModel" required >
+                            </div>
+                            <div *ngIf="price.touched && price.invalid" class="alert alert-danger">Price required</div>
+
+                            <label>Image</label>
+                            <div class="input-group" >
+                                <div class="input-group-prepend">
+                                  
+                                </div>
+                                <input type="text" class="form-control" placeholder="Img" name="img" ngModel #img="ngModel"  >
+                            </div>
+                            <div *ngIf="img.touched && img.invalid" class="alert alert-danger">Image required</div>
+
+                        </div>
+                        
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <label>Description</label>
+                            <div class="input-group-prepend" >
+                                <textarea type="text" class="form-control" placeholder="Enter Product Description" required name="description" ngModel #description="ngModel" ></textarea>
+                                                                
+                            </div>
+                            <div *ngIf="description.touched && description.invalid" class="alert alert-danger">Fill the description area</div>
+
+                            
+
+                        </div>
+
+                        
+
+                        
+                        
+                    </div>
+                    
+                        <div class="col-md-4 mr-auto ml-auto">
+                            <button type="submit" class="btn btn-danger btn-lg btn-fill" [disabled]="addproduct.invalid">ADD Product</button>
+                        </div>
+                    
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+
+
+

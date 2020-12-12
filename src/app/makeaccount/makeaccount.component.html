@@ -1,0 +1,80 @@
+<div class="wrapper">
+    <div class="page-header page-header-xs" data-parallax="true" style="background-color: #242322;">
+        <h2 class="text-uppercase text-center" style="color: white; font-size: 70px;">Welcome to LOOH Family</h2>
+    </div>
+    
+    
+    
+<!--Formulaire-->
+<div class="section ">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 mr-auto ml-auto">
+                
+                <form class="contact-form" #f="ngForm">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label>Name</label>
+                            <div class="input-group" >
+                                <div class="input-group-prepend">
+                                  <span class="input-group-text"><i class="nc-icon nc-single-02"></i></span>
+                                </div>
+                                <input type="text" class="form-control" placeholder="Name" name="name" ngModel #name="ngModel" required >
+                                
+                            </div>
+                            <div *ngIf="name.touched && name.invalid" class="alert alert-danger">Name required</div>
+                        </div>
+                        <div class="col-md-6">
+                            <label>Email</label>
+                            <div class="input-group" >
+                                <div class="input-group-prepend">
+                                  <span class="input-group-text">  <i class="nc-icon nc-email-85"></i></span>
+                                </div>
+                                <input type="email" class="form-control" placeholder="Email" name="email" ngModel #email="ngModel" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                            </div>
+                            <div *ngIf="email.errors && (email.invalid && email.touched)" class="alert alert-danger">
+                                <small  *ngIf="email.errors.required">Email is required</small>
+                                <small  *ngIf="email.errors.pattern">Please provide a valid email address</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label>Number</label>
+                            <div class="input-group" >
+                                <div class="input-group-prepend">
+                                  <span class="input-group-text"><i class="nc-icon nc-mobile"></i></span>
+                                </div>
+                                <input type="text" class="form-control" placeholder="Number" name="number" ngModel #number="ngModel" required minlength="8" maxlength="8">
+                            </div>
+                            <div *ngIf="number.errors && (number.invalid && number.touched)" class="alert alert-danger">
+                                <small  *ngIf="number.errors.required">Number is required</small>
+                                <small  *ngIf="number.errors.minlength">Number incorrect</small>
+                                
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <label>Adresse</label>
+                            <div class="input-group" >
+                                <div class="input-group-prepend">
+                                  <span class="input-group-text"><i class="nc-icon nc-compass-05"></i></span>
+                                </div>
+                                <input type="text" class="form-control" placeholder="Adresse" name="adresse" ngModel #adresse="ngModel" required >
+                            </div>
+                            <div *ngIf="adresse.touched && adresse.invalid" class="alert alert-danger">Adresse required</div>
+                        </div>
+                        
+                    </div>
+                    
+                        <div class="col-md-4 mr-auto ml-auto">
+                            <button class="btn btn-danger btn-lg btn-fill" [disabled]="f.invalid">Make Account</button>
+                        </div>
+                    
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+

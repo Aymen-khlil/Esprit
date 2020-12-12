@@ -1,0 +1,154 @@
+.az {
+  font-size: 20px;
+}
+.fans {
+  color: white;
+  font-size: 60px;
+}
+.container {
+  margin-top: 30px;
+}
+
+.name .xx {
+  color: white;
+  font-weight: 150px;
+}
+
+.xx {
+  font-weight: bold;
+  color: #ff3b30;
+}
+
+#hot-deal.section {
+  padding: 60px 0px;
+  margin: 30px 0px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 1690px 400px;
+}
+
+.hot-deal {
+  text-align: center;
+}
+
+.hot-deal .hot-deal-countdown {
+  margin-bottom: 30px;
+}
+
+.hot-deal .hot-deal-countdown > li {
+  position: relative;
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background: #ff3b30;
+  text-align: center;
+  border-radius: 50%;
+  margin: 0px 5px;
+}
+
+.hot-deal .hot-deal-countdown > li > div {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.hot-deal .hot-deal-countdown > li > div h3 {
+  color: #fff;
+  margin-bottom: 0px;
+}
+
+.hot-deal .hot-deal-countdown > li > div span {
+  display: block;
+  font-size: 10px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.hot-deal p {
+  text-transform: uppercase;
+  font-size: 24px;
+}
+
+.hot-deal .cta-btn {
+  margin-top: 15px;
+}
+
+.dd {
+  font-weight: bold;
+  color: white;
+}
+.cc {
+  color: #ff3b30;
+  font-size: 30px;
+}
+
+#newsletter.section {
+  border-bottom: 3px solid #ff3b30;
+}
+
+.newsletter {
+  text-align: center;
+}
+
+.newsletter p {
+  font-size: 24px;
+}
+
+.newsletter form {
+  position: relative;
+  max-width: 520px;
+  margin: 30px auto;
+}
+
+.newsletter form .input {
+  width: calc(100% - 160px);
+
+  border-radius: 40px 0px 0px 40px;
+  height: 40px;
+  border-color: #ff3b30;
+}
+
+.newsletter form .newsletter-btn {
+  width: 160px;
+  height: 41px;
+  font-weight: 700;
+  background: #ff3b30;
+  color: white;
+  border: none;
+  border-radius: 0px 40px 39px 0px;
+}
+
+.newsletter .newsletter-follow {
+  text-align: center;
+}
+
+.newsletter .newsletter-follow li {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.newsletter .newsletter-follow li:last-child {
+  margin-right: 0px;
+}
+
+.newsletter .newsletter-follow li a {
+  position: relative;
+  display: block;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+
+  background-color: white;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
+}
+
+.newsletter .newsletter-follow li a:hover,
+.newsletter .newsletter-follow li a:focus {
+  color: #ff3b30;
+}

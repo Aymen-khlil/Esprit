@@ -1,0 +1,50 @@
+<div class="section">
+    azeaze
+    </div>
+  
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3">
+        <app-sidebar></app-sidebar>
+        
+    </div>
+  <div class="col-lg-9">
+      <div>
+        <h2 class="text-center">By Category</h2>
+    </div>
+        
+    
+        
+    
+          
+          <div class="row">
+  
+          <div class="col-lg-4 col-md-6 mb-4" *ngFor="let prod of productlist" >
+            <div class="card h-100" routerLink="/viewprod/{{prod.id}}" >
+              <a routerLink="/viewprod/{{prod.id}}" ><img class="card-img-top" src="{{prod.Image}}" alt=""></a>
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="#">{{prod.ProdName}}</a>
+                </h4>
+                <h5>{{prod.Price}}</h5>
+                <p class="card-text">{{prod.Description}}</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">{{prod.ratings}} &#9734;</small>
+              </div>
+            </div>
+          </div>
+  
+          
+  
+          </div>
+        <!-- /.row -->
+  
+      
+        <!-- /.row -->
+        
+    
+      </div>
+    </div>
+  
+    
