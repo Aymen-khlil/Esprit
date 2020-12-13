@@ -11,18 +11,33 @@
         <div class="row">
             <div class="col-md-8 mr-auto ml-auto">
                 
-                <form class="contact-form" (submit)="upProd(updateproduct)"  #updateproduct="ngForm">
+                <form class="contact-form" (submit)="updated(updateproduct)" *ngIf="prodet" #updateproduct="ngForm">
+                   <!-- <div class="row">
+                        <div class="col-md-6">
+                            <label>Product ID</label>
+                            <div class="input-group" >
+                                <div class="input-group-prepend">
+                                  
+                                </div>
+                                <input type="text" class="form-control" placeholder="id" name="id"  [(ngModel)]="prodet.id" ngModel #id="ngModel" required >
+                                
+                            </div>
+                            
+                        </div>
+                        
+
+                    </div>-->
                     <div class="row">
                         <div class="col-md-6">
                             <label>Product Name</label>
-                            <div class="input-group" >
+                            <div class="input-group"  >
                                 <div class="input-group-prepend">
                                   
                                 </div>
                                 <input type="text" class="form-control" placeholder="Product Name" name="ProdName"  [(ngModel)]="prodet.ProdName" ngModel #ProdName="ngModel" required >
                                 
                             </div>
-                            <div *ngIf="ProdName.touched && ProdName.invalid" class="alert alert-danger">Product Name required</div>
+                            <!--<div *ngIf="ProdName.touched && ProdName.invalid" class="alert alert-danger">Product Name required</div>-->
                         </div>
                         <div class="col-md-6">
                             <label>Cathegory ID</label>

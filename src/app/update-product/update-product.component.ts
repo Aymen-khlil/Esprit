@@ -10,18 +10,19 @@ import { Produit } from '../produit';
 })
 export class UpdateProductComponent implements OnInit {
 
- productId= 0;
+ productId = 0;
  prodet : Produit;
 
   constructor( private activatedRoute : ActivatedRoute,
-               private productsService: ProductsService ) { }
+               private productsService: ProductsService
+                ) { }
 
   ngOnInit(): void {
 
-    this.activatedRoute.params.subscribe(data =>{
+    this.activatedRoute.params.subscribe(data => {
       this.productId = data.id ;
   
-     this.productsService.viewProduct(this.productId).subscribe(cdata =>{
+     this.productsService.viewProduct(this.productId).subscribe(cdata => {
        this.prodet = cdata ;
      });
 
@@ -30,14 +31,16 @@ export class UpdateProductComponent implements OnInit {
 
   }
 
-  upProd(form){
+  updated(form){
+
+    console.log(form);
 
     const updated = {
 
       id: form.value.id,
       ProdName: form.value.ProdName,
       category_id: form.value.category_id,
-      Image:'./assets/data/'+form.value.Image +'.png',
+      Image: '',
       Description: form.value.Description,
       Price: form.value.Price,
       Available: 'yes',

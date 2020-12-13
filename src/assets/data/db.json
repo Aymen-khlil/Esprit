@@ -37,16 +37,28 @@
       "Theme": "Summer"
     },
     {
-      "id": 30,
-      "ProdName": "Product 4",
+      "ProdName": "Aymen",
+      "category_id": "2",
+      "Image": "",
+      "Description": "avbt",
+      "Price": "6587",
+      "Available": "yes",
+      "ratings": "3",
+      "reviews": "aze",
+      "Theme": "Summer",
+      "id": 31
+    },
+    {
+      "ProdName": "khalil bousrih",
       "category_id": "1",
-      "Image": "./assets/data/.png",
-      "Description": "PRODUCT DESCIRPTION",
-      "Price": "20",
+      "Image": "",
+      "Description": "khalil bousrih",
+      "Price": "100 DT",
       "Available": "yes",
       "ratings": "4",
       "reviews": "aze",
-      "Theme": "Spring"
+      "Theme": "Summer",
+      "id": 29
     }
   ],
   "Categories": [

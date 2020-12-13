@@ -19,7 +19,7 @@ export class CreateProductComponent implements OnInit {
   newprod(form){
     
     let newproduct = {
-      id: 30,
+      id: 26,
       ProdName: form.value.name,
       category_id: form.value.categ,
       Image:'./assets/data/'+form.value.img+'.png',

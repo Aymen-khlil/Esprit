@@ -32,11 +32,12 @@ export class ProductsService {
     return this.httpClient.get<Produit>(productUrl); //noramelemnt iraja observable
 
   }
-  updateProduct(productBody, productId):Observable<Produit>{
-    const productUrl = 'http://localhost:3000/LoohHome/'+ productId;
-    return this.httpClient.put<Produit>(productUrl, productBody); //noramelemnt iraja observable
 
+  updateProduct(productId, productBody): Observable<Produit>{
+    const productUrl = 'http://localhost:3000/LoohHome/' + productId;
+    return this.httpClient.put<Produit>(productUrl, productBody); // return an observable
   }
+
   deleteProduct(productId):Observable<Produit>{
     const productUrl = 'http://localhost:3000/LoohHome/'+productId;
     return this.httpClient.delete<Produit>(productUrl); //noramelemnt iraja observable

@@ -1,4 +1,4 @@
-export class Produit {
+export interface Produit {
     id: string;
     ProdName:string;
     category_id: number;
