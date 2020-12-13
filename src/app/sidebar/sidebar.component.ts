@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Cat } from '../cat';
-import { ProductsService } from '../products.service';
+import { Cat } from '../model/cat';
+import { ProductsService } from '../shared/products.service';
 
 @Component({
   selector: 'app-sidebar',

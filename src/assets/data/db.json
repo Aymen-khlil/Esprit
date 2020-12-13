@@ -107,6 +107,14 @@
       "Adresse": "aze",
       "Password": "aaa",
       "id": 6
+    },
+    {
+      "Name": "Aymen",
+      "Email": "aze.khlil@gmail.com",
+      "Number": "33333333",
+      "Adresse": "Aymen",
+      "Password": "123",
+      "id": 7
     }
   ]
 }

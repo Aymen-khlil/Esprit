@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { ProductsService } from '../products.service';
-import { Users } from '../Users';
+import { ProductsService } from '../shared/products.service';
+import { Users } from '../model/Users';
 
 @Component({
   selector: 'app-signup',
@@ -43,7 +43,7 @@ export class SignupComponent implements OnInit {
 
   ngOnInit(): void {
 
-    this.tt.getUsers().subscribe((data) =>(this.us = data));
+    //this.tt.getUsers().subscribe((data) =>(this.us = data));
 
 
   }
