@@ -15,7 +15,7 @@
                                   <i class="fa fa-twitter"></i>
                               </a>
                           </div>
-                          <form class="register-form" #login="ngForm" >
+                          <form class="register-form">
                               <label>Email</label>
                               <div class="input-group form-group-no-border">
                                 <div class="input-group-prepend">
@@ -24,12 +24,8 @@
                                   </span>
                                 </div>
 
-                                  <input type="text" class="form-control" placeholder="Email" name="Email" [(ngModel)]="Email"  >
+                                  <input type="text" class="form-control" placeholder="Email"  >
                               </div>
-                              <div *ngIf="Email.errors && (Email.invalid && Email.touched)" class="alert alert-danger">
-                                <small  *ngIf="Email.errors.required">Email is Required</small>
-                                <small  *ngIf="Email.errors.pattern">Email is wrong</small>
-                            </div>
 
                               <label>Password</label>
                               <div class="input-group form-group-no-border">
@@ -38,9 +34,9 @@
                                       <i class="nc-icon nc-key-25"></i>
                                   </span>
                                 </div>
-                                  <input type="password" class="form-control" placeholder="Password" name="Password" [(ngModel)]="Password" >
+                                  <input type="password" class="form-control" placeholder="Password"  >
                               </div>
-                              <button class="btn btn-danger btn-block btn-round" [disabled]="login.invalid" >Connect</button>
+                              <button class="btn btn-danger btn-block btn-round">Connect</button>
                               <button [routerLink]="['/register']"  type="button" class="btn btn-block btn-danger">Make an Account</button>
                           </form>
                           <div class="forgot">

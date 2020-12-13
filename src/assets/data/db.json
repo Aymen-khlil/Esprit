@@ -35,6 +35,18 @@
       "ratings": "5",
       "reviews": "10",
       "Theme": "Summer"
+    },
+    {
+      "ProdName": "TestId",
+      "category_id": "2",
+      "Image": "./assets/data/.png",
+      "Description": "aze",
+      "Price": "6464646464",
+      "Available": "yes",
+      "ratings": "2",
+      "reviews": "aze",
+      "Theme": "Fall",
+      "id": 5
     }
   ],
   "Categories": [
@@ -71,6 +83,22 @@
       "Adresse": "aze",
       "Password": "aze",
       "id": 302
+    },
+    {
+      "Name": "aze",
+      "Email": "mohamedaymen.khlil@gmail.com",
+      "Number": "33333333",
+      "Adresse": "aze",
+      "Password": "aaa",
+      "id": 303
+    },
+    {
+      "Name": "test",
+      "Email": "test@aa.tn",
+      "Number": "78787878",
+      "Adresse": "test",
+      "Password": "aze",
+      "id": 304
     }
   ]
 }
