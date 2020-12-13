@@ -7,7 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SignupComponent implements OnInit {
   
-    
+    Email : string ; 
+    Password : string;
     
   constructor() { }
 

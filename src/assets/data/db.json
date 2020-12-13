@@ -37,23 +37,11 @@
       "Theme": "Summer"
     },
     {
-      "ProdName": "Aymen",
-      "category_id": "2",
-      "Image": "",
-      "Description": "avbt",
-      "Price": "6587",
-      "Available": "yes",
-      "ratings": "3",
-      "reviews": "aze",
-      "Theme": "Summer",
-      "id": 31
-    },
-    {
       "ProdName": "khalil bousrih",
       "category_id": "1",
       "Image": "",
       "Description": "khalil bousrih",
-      "Price": "100 DT",
+      "Price": "200 DT",
       "Available": "yes",
       "ratings": "4",
       "reviews": "aze",
@@ -71,7 +59,30 @@
       "CatName": "Cloaks"
     }
   ],
-  "profile": {
-    "yuiui": "typicode"
-  }
+  "Users": [
+    {
+      "id": 301,
+      "Name": "test",
+      "Email": "test@esprit.com",
+      "Number": "22732763",
+      "Adresse": "Tunis city",
+      "Password": "test"
+    },
+    {
+      "id": 300,
+      "Name": "test2",
+      "Email": "test2@esprit.com",
+      "Number": "22222222",
+      "Adresse": "Tunis city",
+      "Password": "test2"
+    },
+    {
+      "Name": "aze",
+      "Email": "aze.khlil@gmail.com",
+      "Number": "55555555",
+      "Adresse": "aze",
+      "Password": "aze",
+      "id": 302
+    }
+  ]
 }

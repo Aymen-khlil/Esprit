@@ -24,7 +24,7 @@
                                   </span>
                                 </div>
 
-                                  <input type="text" class="form-control" placeholder="Email"  >
+                                  <input type="text" class="form-control" placeholder="Email" name="Email" [(ngModel)]="Email"  >
                               </div>
 
                               <label>Password</label>
@@ -34,7 +34,7 @@
                                       <i class="nc-icon nc-key-25"></i>
                                   </span>
                                 </div>
-                                  <input type="password" class="form-control" placeholder="Password"  >
+                                  <input type="password" class="form-control" placeholder="Password" name="Password" [(ngModel)]="Password" >
                               </div>
                               <button class="btn btn-danger btn-block btn-round">Connect</button>
                               <button [routerLink]="['/register']"  type="button" class="btn btn-block btn-danger">Make an Account</button>

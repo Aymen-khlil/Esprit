@@ -3,6 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import {Produit} from './produit';
 import { Observable } from 'rxjs';
 import { Cat } from './cat';
+import { Users } from './Users';
 
 @Injectable({
   providedIn: 'root'
@@ -20,6 +21,11 @@ export class ProductsService {
   getCat(): Observable<Cat>{
     const categoriesUrl = 'http://localhost:3000/Categories';
     return this.httpClient.get<Cat>(categoriesUrl);
+  }
+
+  createUser(productBody): Observable<Users>{
+    const productUrl = 'http://localhost:3000/Users' ;
+    return this.httpClient.post<Users>(productUrl, productBody);
   }
 
   createProduct(productBody): Observable<Produit> {
@@ -48,5 +54,9 @@ export class ProductsService {
     return this.httpClient.get<Produit>(productUrl); //noramelemnt iraja observable
 
   }
+
+  
+
+  
 
 }

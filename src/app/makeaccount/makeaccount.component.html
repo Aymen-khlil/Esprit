@@ -11,7 +11,7 @@
         <div class="row">
             <div class="col-md-8 mr-auto ml-auto">
                 
-                <form class="contact-form" #f="ngForm">
+                <form class="contact-form" #f="ngForm" (submit)="newUser(f)" >
                     <div class="row">
                         <div class="col-md-6">
                             <label>Name</label>
@@ -38,6 +38,22 @@
                             </div>
                         </div>
                     </div>
+
+                    <div class="row">
+                        
+                        <div class="col-md-12">
+                            <label>Password</label>
+                            <div class="input-group" >
+                                <div class="input-group-prepend">
+                                  <span class="input-group-text"><i class="nc-icon nc-compass-05"></i></span>
+                                </div>
+                                <input type="text" class="form-control" placeholder="Password" name="pass" ngModel #pass="ngModel" required >
+                            </div>
+                            <div *ngIf="pass.touched && pass.invalid" class="alert alert-danger">Password required</div>
+                        </div>
+                        
+                    </div>
+
                     <div class="row">
                         <div class="col-md-6">
                             <label>Number</label>
