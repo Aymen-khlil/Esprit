@@ -28,6 +28,18 @@ export class ProductsService {
     return this.httpClient.post<Users>(productUrl, productBody);
   }
 
+  getUser(userId): Observable<Users>{
+    const productUrl = 'http://localhost:3000/Users/'+ userId;
+    return this.httpClient.get<Users>(productUrl); //noramelemnt iraja observable
+
+  }
+
+  getUsers(): Observable<Users>{
+    const productUrl = 'http://localhost:3000/Users';
+
+    return this.httpClient.get<Users>(productUrl); // return an observable
+  }
+
   createProduct(productBody): Observable<Produit> {
     const productUrl = 'http://localhost:3000/LoohHome';
     return this.httpClient.post<Produit>(productUrl, productBody); //noramelemnt iraja observable
