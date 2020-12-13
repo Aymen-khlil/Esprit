@@ -25,7 +25,7 @@
       "Theme": "Summer"
     },
     {
-      "id": 4,
+      "id": 3,
       "ProdName": "Saturn lamp",
       "category_id": "2",
       "Image": "./assets/data/saturn.PNG",
@@ -37,16 +37,16 @@
       "Theme": "Summer"
     },
     {
-      "ProdName": "TestId",
-      "category_id": "2",
+      "ProdName": "miki",
+      "category_id": "1",
       "Image": "./assets/data/.png",
       "Description": "aze",
-      "Price": "6464646464",
+      "Price": "33",
       "Available": "yes",
       "ratings": "2",
       "reviews": "aze",
-      "Theme": "Fall",
-      "id": 5
+      "Theme": "Summer",
+      "id": 4
     }
   ],
   "Categories": [
@@ -61,7 +61,7 @@
   ],
   "Users": [
     {
-      "id": 301,
+      "id": 1,
       "Name": "test",
       "Email": "test@esprit.com",
       "Number": "22732763",
@@ -69,7 +69,7 @@
       "Password": "test"
     },
     {
-      "id": 300,
+      "id": 2,
       "Name": "test2",
       "Email": "test2@esprit.com",
       "Number": "22222222",
@@ -82,7 +82,7 @@
       "Number": "55555555",
       "Adresse": "aze",
       "Password": "aze",
-      "id": 302
+      "id": 3
     },
     {
       "Name": "aze",
@@ -90,7 +90,7 @@
       "Number": "33333333",
       "Adresse": "aze",
       "Password": "aaa",
-      "id": 303
+      "id": 4
     },
     {
       "Name": "test",
@@ -98,7 +98,15 @@
       "Number": "78787878",
       "Adresse": "test",
       "Password": "aze",
-      "id": 304
+      "id": 5
+    },
+    {
+      "Name": "aze",
+      "Email": "aze.khlil@gmail.com",
+      "Number": "33333333",
+      "Adresse": "aze",
+      "Password": "aaa",
+      "id": 6
     }
   ]
 }
